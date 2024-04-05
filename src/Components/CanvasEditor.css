@@ -1,0 +1,60 @@
+.canvas-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+  }
+  .add-color-button {
+    margin-top: 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #0369A1;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-color-button:hover {
+    background-color: #034585;
+}
+
+  .canvas-editor {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+  }
+    .canvas-editor input {
+    margin-bottom: 5px;
+  }
+  
+  .color-picker {
+    display: flex;
+    align-items: center;
+  }
+  
+  .recent-colors {
+    display: flex;
+  }
+  
+  .color-box {
+    width: 40px;
+    height: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .add-color-button {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .color-picker-toggle {
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  .callToAction{
+    background-color: white;
+    color: blue;
+  }
+  
