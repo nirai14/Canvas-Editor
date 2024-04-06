@@ -58,18 +58,18 @@ class CanvasEditor {
         //"Shop Now" button
         const ctaWidth = ctx.measureText(text.cta).width;
         const ctaX = (canvas.width - ctaWidth) / 2;
-        const ctaY = marginTop + textHeight * 2 + 10; // Add padding
-        ctx.fillStyle = '#FFFFFF'; // Change button background color
-        ctx.fillRect(ctaX - 10, ctaY - 5, ctaWidth + 20, textHeight + 10); // Draw button background
-        ctx.fillStyle = '#0369A1'; // Change button text color to white
-        ctx.fillText(text.cta, canvas.width / 2, ctaY); // Draw "Shop Now" text
+        const ctaY = marginTop + textHeight * 2 + 10; 
+        ctx.fillStyle = '#FFFFFF'; 
+        ctx.fillRect(ctaX - 10, ctaY - 5, ctaWidth + 20, textHeight + 10); 
+        ctx.fillStyle = '#0369A1'; 
+        ctx.fillText(text.cta, canvas.width / 2, ctaY); 
 
         //Draw image
         if (image) {
-            const imgWidth = canvas.width * scaleFactor * 0.8; // 80% of canvas width
-            const imgHeight = canvas.height * scaleFactor * 0.8; // 80% of canvas height
-            const x = (canvas.width - imgWidth) / 2; // Center image horizontally
-            const y = (canvas.height - imgHeight) / 2; // Center image vertically
+            const imgWidth = canvas.width * scaleFactor * 0.8;
+            const imgHeight = canvas.height * scaleFactor * 0.8; 
+            const x = (canvas.width - imgWidth) / 2; 
+            const y = (canvas.height - imgHeight) / 2; 
             ctx.drawImage(image, x, y, imgWidth, imgHeight);
         }
     }
